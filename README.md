@@ -1,6 +1,6 @@
 # 💍 Multi-Agent Wedding Planner
 
-An AI wedding planning assistant built with **LangChain**, **OpenAI**, and **Tavily**. A main planner agent coordinates specialized research subagents to turn a couple's preferences into a complete, client-ready wedding plan.
+An AI wedding planning assistant built with **LangChain**, **OpenAI**, **Tavily**, and **Streamlit**. A main planner agent coordinates specialized research subagents to turn a couple's preferences into a complete, client-ready wedding plan.
 
 ## ✨ Overview
 
@@ -40,12 +40,14 @@ The system then produces a full planning strategy with recommendations, timeline
 - LangChain
 - OpenAI API
 - Tavily Search API
+- Streamlit (web interface)
 - uv (dependency management)
 
 ## 📁 Project Structure
 
 ```
-├── main.py       # Entry point (CLI)
+├── app.py        # Streamlit web app
+├── main.py       # CLI entry point
 ├── agents.py     # Main agent and subagents
 ├── tools.py      # Tavily search tools
 ├── models.py     # Model configuration
@@ -79,6 +81,14 @@ TAVILY_API_KEY=your_key
 
 ### 4. Run
 
+**Streamlit app**
+
+```bash
+uv run streamlit run app.py
+```
+
+**CLI**
+
 ```bash
 uv run main.py
 ```
@@ -98,10 +108,11 @@ A structured wedding plan including:
 - How multi-agent systems are structured and coordinated
 - Delegating tasks to subagents with LangChain
 - Integrating real-time web search into agents
+- Building both a CLI and a Streamlit interface
 
 ## 🙌 Credits
 
-Based on a tutorial project, extended and adapted by me. Tutorial: [add the video link here]
+Based on a tutorial project, extended and adapted by me.
 
 ## 📄 License
 
