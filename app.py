@@ -16,8 +16,8 @@ from prompts import USER_PROMPT_FOR_MAIN_AGENT, WEDDING_PLANNER_AGENT_PROMPT
 
 
 APP_TITLE = "Multi-Agent Wedding Planner"
-MODEL_NAME = "gpt-5-nano"
-REQUIRED_KEYS = ("OPENAI_API_KEY", "TAVILY_API_KEY")
+MODEL_NAME = "gemini-3.8-flash"
+REQUIRED_KEYS = ("GEMINI_API_KEY", "TAVILY_API_KEY")
 
 STYLE_OPTIONS = [
     "Modern",
